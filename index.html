@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="menu">
+    <input id="player1" placeholder="Player 1 name" />
+    <input id="player2" placeholder="Player 2 name" />
+    <select id="mode">
+      <option value="human">Play with Friend</option>
+      <option value="computer">Play with Computer</option>
+    </select>
+    <select id="size">
+      <option value="3">3x3</option>
+      <option value="5">5x5</option>
+      <option value="10">10x10</option>
+    </select>
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="resetGame()">New Game</button>
+  </div>
+  <div id="message" class="message"></div>
+  <div id="board" class="board"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
